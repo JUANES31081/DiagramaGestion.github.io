@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descomposición Tecnológica de un Teléfono Móvil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .section-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .section-content.active {
+            max-height: 2000px;
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-100 min-h-screen py-8">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold text-center mb-12 text-gray-800">Descomposición Tecnológica de un Teléfono Móvil</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Hardware Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-blue-500 text-white flex justify-between items-center section-toggle">
+                    Hardware
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://e.rpp-noticias.io/xlarge/2020/05/20/023902_944784.jpg" alt="CPU" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Procesador (CPU)</h3>
+                                <p class="text-gray-600">El cerebro del teléfono, que realiza las operaciones y procesos.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://partesdelacomputadora.org/wp-content/uploads/2020/08/Memoria-ram-y-rom-diferencias-300x300.jpg" alt="Memoria" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Memoria (RAM y ROM)</h3>
+                                <p class="text-gray-600">RAM para operaciones temporales y ROM para almacenamiento permanente.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://img.freepik.com/vector-gratis/pantalla-telefono-inteligente-realista-diferentes-aplicaciones_23-2148374061.jpg" alt="Pantalla" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Pantalla</h3>
+                                <p class="text-gray-600">Incluye la pantalla táctil y la tecnología de visualización (LCD, OLED, etc.).</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.latercera.com/resizer/vHa2WOZ2v4QgBEmvExeZ-K6RUgc=/arc-anglerfish-arc2-prod-copesa/public/BYAUZYVUIRH35FUMILCKUKHYQM.webp" alt="Cámara" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Cámara</h3>
+                                <p class="text-gray-600">Módulos de cámara para fotos y videos, incluyendo sensores y lentes.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://geekland.eu/wp-content/uploads/2018/11/consejos-comprar-una-bateria-telefono.jpg" alt="Batería" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Batería</h3>
+                                <p class="text-gray-600">Fuente de energía del dispositivo.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.redalyc.org/journal/5122/512267930002/512267930002_gf2.png" alt="Sensores" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Sensores</h3>
+                                <p class="text-gray-600">Acelerómetro, giroscopio, sensor de proximidad, brújula, etc.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://res.cloudinary.com/rsc/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.625,f_auto,h_214,q_auto,w_380/c_pad,h_214,w_380/R1245474-03?pgw=1" alt="Módulos de Comunicación" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Módulos de Comunicación</h3>
+                                <p class="text-gray-600">Antenas para conectividad de red (3G, 4G, 5G), Wi-Fi, Bluetooth, GPS, etc.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.adslzone.net/app/uploads-adslzone.net/2019/06/usb-tipos.jpg" alt="Puertos y Conectores" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Puertos y Conectores</h3>
+                                <p class="text-gray-600">USB, auriculares, SIM, etc.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://img.freepik.com/fotos-premium/estructura-interna-telefono-movil_1015255-41469.jpg" alt="Chasis y Estructura" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Chasis y Estructura</h3>
+                                <p class="text-gray-600">Carcasa y estructura física del teléfono.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-green-500 text-white flex justify-between items-center section-toggle">
+                    Software
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://dtyoc.com/wp-content/uploads/2016/09/so-moviles-logos.jpg?w=640" alt="Sistema Operativo" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Sistema Operativo (OS)</h3>
+                                <p class="text-gray-600">Android, iOS, etc., que gestiona el hardware y proporciona una interfaz para el usuario.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.nobbot.com/wp-content/uploads/2020/02/iStock-1054787534.jpg" alt="Firmware" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Firmware</h3>
+                                <p class="text-gray-600">Software integrado en el hardware, como controladores de cámara y módulos de comunicación.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaV4xo_sy52bQcjAwPzjlB0cZJHj4Ii6ro6w&s" alt="Aplicaciones" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Aplicaciones</h3>
+                                <p class="text-gray-600">Aplicaciones preinstaladas (como la cámara, la galería) y aplicaciones de terceros disponibles en tiendas de aplicaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interfaz de Usuario Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-yellow-500 text-white flex justify-between items-center section-toggle">
+                    Interfaz de Usuario
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://img.freepik.com/vector-premium/elementos-interfaz-grafica-usuario-aplicacion-movil-shoping_556708-2888.jpg" alt="Interfaz Gráfica" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Interfaz Gráfica</h3>
+                                <p class="text-gray-600">Diseño y elementos visuales del sistema operativo, como iconos y menús.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.appdesignbook.com/media/pages/contenidos/patrones-interaccion-moviles/60812b5964-1713173470/7_uso-movil.png" alt="Entradas de Usuario" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Entradas de Usuario</h3>
+                                <p class="text-gray-600">Métodos de interacción, como la pantalla táctil, botones físicos, y controles por voz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conectividad Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-red-500 text-white flex justify-between items-center section-toggle">
+                    Conectividad
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP6_VmiBBfU6DA-bB3Sv_VYMhRCSh2OgEFpQ&s" alt="Redes Móviles" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Redes Móviles</h3>
+                                <p class="text-gray-600">Tecnología para conexión a redes celulares.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://i.blogs.es/a34980/wifi-bluetooth/1366_2000.jpg" alt="Wi-Fi y Bluetooth" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Wi-Fi y Bluetooth</h3>
+                                <p class="text-gray-600">Para conexiones inalámbricas a otros dispositivos y redes.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://i.blogs.es/11a805/nfc/1366_2000.jpg" alt="NFC" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">NFC (Near Field Communication)</h3>
+                                <p class="text-gray-600">Para pagos móviles y transferencias de datos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicios y Ecosistemas Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-purple-500 text-white flex justify-between items-center section-toggle">
+                    Servicios y Ecosistemas
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMRe72YXhp60djQrJtZz56fIYK6VRjiWLcg&s" alt="Tiendas de Aplicaciones" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Tiendas de Aplicaciones</h3>
+                                <p class="text-gray-600">Plataformas para descargar y actualizar aplicaciones (Google Play, App Store).</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://www.lavanguardia.com/andro4all/hero/2023/03/apps-de-almacenamiento-en-la-nube.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="Servicios en la Nube" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Servicios en la Nube</h3>
+                                <p class="text-gray-600">Almacenamiento y servicios basados en la nube para respaldo y sincronización de datos.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfhglvj0qyb2cejToukbvrc2slLwjSB3xAwA&s" alt="Ecosistemas de Integración" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Ecosistemas de Integración</h3>
+                                <p class="text-gray-600">Cómo el teléfono se integra con otros dispositivos y servicios (por ejemplo, con dispositivos inteligentes en el hogar).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seguridad Section -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <button class="w-full p-4 text-left font-semibold text-xl bg-indigo-500 text-white flex justify-between items-center section-toggle">
+                    Seguridad
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="section-content">
+                    <div class="p-4">
+                        <div class="mb-4 flex items-start">
+                            <img src="https://img.freepik.com/vector-premium/proteccion-datos-moviles-e-informacion-personal-manos-sosteniendo-telefono-movil-bloqueo_317038-31.jpg" alt="Protección de Datos" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Protección de Datos</h3>
+                                <p class="text-gray-600">Métodos de cifrado y protección de la información personal.</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex items-start">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTek6LuGueGQ_AT-roNfV-2io95hKjd7nrCEA&s" alt="Autenticación" class="w-20 h-20 object-cover rounded-lg mr-4">
+                            <div>
+                                <h3 class="font-bold text-lg text-gray-800">Autenticación</h3>
+                                <p class="text-gray-600">Métodos para verificar la identidad del usuario (huella dactilar, reconocimiento facial).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.section-toggle');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    content.classList.toggle('active');
+                    const icon = this.querySelector('svg');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
